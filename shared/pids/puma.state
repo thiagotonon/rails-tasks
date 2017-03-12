@@ -1,0 +1,25 @@
+---
+pid: 46535
+config: !ruby/object:Puma::Configuration
+  options:
+    :min_threads: 1
+    :max_threads: 6
+    :quiet: false
+    :debug: false
+    :binds:
+    - unix:///Users/thiagotonon/Documents/projects/others/web/runrunit-test/shared/sockets/puma.sock
+    :workers: 2
+    :daemon: false
+    :worker_directory: "/Users/thiagotonon/Documents/projects/others/web/runrunit-test"
+    :config_file: config/puma.rb
+    :mode: :http
+    :worker_timeout: 60
+    :environment: production
+    :redirect_stdout: "/Users/thiagotonon/Documents/projects/others/web/runrunit-test/shared/log/puma.stdout.log"
+    :redirect_stderr: "/Users/thiagotonon/Documents/projects/others/web/runrunit-test/shared/log/puma.stderr.log"
+    :redirect_append: true
+    :pidfile: "/Users/thiagotonon/Documents/projects/others/web/runrunit-test/shared/pids/puma.pid"
+    :state: "/Users/thiagotonon/Documents/projects/others/web/runrunit-test/shared/pids/puma.state"
+    :control_url: unix:///var/folders/32/cb2lgl454hv7n7l2z375hct80000gn/T/puma-status-1489335124418-46535
+    :control_url_temp: "/var/folders/32/cb2lgl454hv7n7l2z375hct80000gn/T/puma-status-1489335124418-46535"
+    :control_auth_token: f59faa27a0af36dad11d2f64be2414f

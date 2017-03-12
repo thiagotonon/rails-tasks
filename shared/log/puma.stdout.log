@@ -1,0 +1,16 @@
+=== puma startup: 2017-03-12 13:12:04 -0300 ===
+[46535] * Starting control server on unix:///var/folders/32/cb2lgl454hv7n7l2z375hct80000gn/T/puma-status-1489335124418-46535
+[46536] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46537] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46539] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46540] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46542] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46543] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46544] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46545] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46548] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile[46549] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+
+[46550] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46551] + Gemfile in context: /Users/thiagotonon/Documents/projects/others/web/runrunit-test/Gemfile
+[46535] - Gracefully shutting down workers...
+[46535] - Goodbye!

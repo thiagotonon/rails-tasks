@@ -10,3 +10,7 @@ development:
 test:
   <<: *default
   database: runrunit-test
+
+production:
+  <<: *default
+  database: runrunit-production
