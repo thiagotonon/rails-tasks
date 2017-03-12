@@ -1,0 +1,1 @@
+SELECT EXTRACT(EPOCH FROM '2017-02-10 20:00:00'::timestamp-time::timestamp) FROM task_start_times;

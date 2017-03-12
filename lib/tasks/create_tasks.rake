@@ -8,11 +8,11 @@ namespace :tasks do
     task6 = Task.create!(title: 'task6', position: 6)
     task7 = Task.create!(title: 'task7', position: 7)
 
-    Task::StartTime.create(task: task7, start_time: Time.new('2017-01-01 12:00:00'))
-    Task::StartTime.create(task: task5, start_time: Time.new('2017-01-01 12:50:00'))
-    Task::StartTime.create(task: task2, start_time: Time.new('2017-01-03 16:00:00'))
-    Task::StartTime.create(task: task6, start_time: Time.new('2017-01-10 19:20:00'))
-    Task::StartTime.create(task: task1, start_time: Time.new('2017-01-10 19:36:00'))
-    Task::StartTime.create(task: task7, start_time: Time.new('2017-02-10 19:50:00'))
+    Task::StartTime.create(task: task7, time: '2017-01-01 12:00:00'.to_datetime)
+    Task::StartTime.create(task: task5, time: '2017-01-01 12:50:00'.to_datetime)
+    Task::StartTime.create(task: task2, time: '2017-01-03 16:00:00'.to_datetime)
+    Task::StartTime.create(task: task6, time: '2017-01-10 19:20:00'.to_datetime)
+    Task::StartTime.create(task: task1, time: '2017-01-10 19:36:00'.to_datetime)
+    Task::StartTime.create(task: task7, time: '2017-02-10 19:50:00'.to_datetime)
   end
 end

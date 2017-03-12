@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tasks/spent_times' => 'tasks#spent_times', as: :spent_times
   resources :tasks
 
   # The priority is based upon order of creation: first created -> highest priority.

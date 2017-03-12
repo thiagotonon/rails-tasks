@@ -179,4 +179,26 @@ RSpec.describe TasksController, type: :controller do
     end
   end
 
+  describe "GET #spent_times" do
+    before do
+      @task = create(:task)
+    end
+
+    it "assigns all tasks to @tasks" do
+      get :spent_times
+      expect(assigns(:tasks)).to eq([@task])
+    end
+
+    it "returns a json of spent_times" do
+      expected = [{ id: @task.id, spent_time: @task.spent_time_in_seconds }].to_json
+      get :spent_times
+      expect(response.body).to eq(expected)
+    end
+
+    it "returns a 200 status code" do
+      get :spent_times
+      expect(response).to have_http_status(200)
+    end
+  end
+
 end

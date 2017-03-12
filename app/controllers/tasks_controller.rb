@@ -37,6 +37,11 @@ class TasksController < ApplicationController
     end
   end
 
+  def spent_times
+    @tasks = Task.all
+    render json: @tasks, each_serializer: SpentTimeSerializer
+  end
+
   protected
 
     def find_task

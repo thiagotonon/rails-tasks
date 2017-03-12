@@ -11,7 +11,16 @@ class Task < ActiveRecord::Base
   def update_position(position)
     old_position = self.position
     update_attribute(:position, position)
+    
     reorder_tasks(self, old_position)
+  end
+
+  def spent_time_in_seconds
+    return 0 if start_times.empty?
+    end_time = '2017-02-10 20:00:00'.to_datetime
+
+    start_time = start_times.first.time.to_datetime
+    return ((end_time - start_time) * 24 * 60 * 60).to_i
   end
 
   private

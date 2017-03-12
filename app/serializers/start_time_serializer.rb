@@ -1,5 +1,5 @@
 class StartTimeSerializer < ActiveModel::Serializer
-  attributes :id, :start_time
+  attributes :id, :time
 
   belongs_to :task
 end
