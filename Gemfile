@@ -36,7 +36,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'web-console', '~> 2.0', group: :development
 
 group :development, :test do
-	gem 'factory_girl_rails'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'pry-byebug'
   gem 'pry-rails'
