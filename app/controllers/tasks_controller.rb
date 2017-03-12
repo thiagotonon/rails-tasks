@@ -20,12 +20,12 @@ class TasksController < ApplicationController
   end
 
   def create
-    task = Task.new(permitted_task_attributes)
+    @task = Task.new(permitted_task_attributes)
 
-    if task.save
-      render json: task, status: 200
+    if @task.save
+      render json: @task, status: 200
     else
-      render json: "Task is invalid", status: 422
+      render json: { error: "Task is invalid" }, status: 422
     end
   end
 
